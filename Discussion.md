@@ -26,14 +26,11 @@ Navigate to the directory where the script and log file are located.
 
 ## Run the script:
 
-bash
-Copy
 python log_retrieval.py
 Enter the Target Date:
 
 The script will prompt you to enter the target date in YYYY-MM-DD format:
 
-Copy
 Enter the target date (YYYY-MM-DD):
 Enter the date (e.g., 2024-12-01) and press Enter.
 
@@ -43,29 +40,24 @@ The script will extract all logs for the specified date and save them to output/
 
 A confirmation message will be displayed:
 
-Copy
 Logs for 2024-12-01 have been saved to output/output_2024-12-01.txt
 Example
 Input:
 Log file (large_log_file.txt):
 
-Copy
 2024-12-01 14:23:45 INFO User logged in  
 2024-12-01 14:24:10 ERROR Failed to connect to the database  
 2024-12-02 09:15:30 WARN Disk space running low  
 User input:
 
-Copy
 Enter the target date (YYYY-MM-DD): 2024-12-01
 Output:
 File output/output_2024-12-01.txt:
 
-Copy
 2024-12-01 14:23:45 INFO User logged in  
 2024-12-01 14:24:10 ERROR Failed to connect to the database  
 Confirmation message:
 
-Copy
 Logs for 2024-12-01 have been saved to output/output_2024-12-01.txt
 Notes
 File Sorting: The log file must be sorted by timestamp for the binary search to work correctly.
